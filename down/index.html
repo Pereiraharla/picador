@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    <script>
+  window.pixelId = "69395caff3559396f150b700";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+
+<script>
+  window.pixelId = "6938ff500a16203aa0c16d27";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+
+<script src="scripts/utms/latest.js" data-utmify-prevent-xcod-sck="" data-utmify-prevent-subids="" async="" defer=""></script>
+    
+  <meta charset="UTF-8">
+  <title>Última Chance - Kit de Soquetes Bosch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --orange: #ee4d2d;
+      --orange-dark: #d63f23;
+      --green: #28a745;
+      --text-main: #212529;
+      --text-muted: #6c757d;
+      --bg-light: #f8f9fa;
+      --border-light: #e9ecef;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #ffffff;
+      color: var(--text-main);
+      font-size: 16px;
+    }
+
+    .page-wrapper {
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 12px;
+    }
+
+    /* PUSH */
+    .push-notification {
+      position: fixed;
+      top: 8px;
+      right: 8px;
+      left: 8px;
+      margin: 0 auto;
+      max-width: 420px;
+      background: #ffffff;
+      border-radius: 6px;
+      border: 1px solid var(--border-light);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      padding: 6px 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: var(--text-main);
+      z-index: 999;
+      opacity: 0;
+      transform: translateY(-10px);
+      pointer-events: none;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .push-notification.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .push-icon {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .push-text span {
+      display: block;
+      color: var(--text-muted);
+      font-size: 11px;
+    }
+
+    /* topo */
+    .top-confirmation {
+      border: 1px solid var(--border-light);
+      background: var(--bg-light);
+      padding: 10px 12px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 40px; 
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .top-confirmation-icon {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--orange);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 18px;
+    }
+    .top-confirmation-text span {
+      display: block;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+    .checkout-banner {
+      border: 1px solid var(--border-light);
+      background: #ffffff;
+      border-radius: 6px;
+      padding: 6px 4px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+      font-size: 11px;
+      color: var(--text-main);
+    }
+    .checkout-banner span {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .checkout-banner-emoji {
+      color: var(--green);
+      font-size: 14px;
+    }
+
+    /* card */
+    .upsell-card {
+      border-radius: 8px;
+      border: 1px solid var(--border-light);
+      background: #fff;
+      padding: 10px;
+    }
+
+    .upsell-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #b02a37;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .upsell-title {
+      font-size: 19px;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+
+    .upsell-sub {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .upsell-timer {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px dashed var(--orange);
+      font-size: 12px;
+      color: var(--orange-dark);
+      margin-bottom: 8px;
+    }
+
+    /* VIDEO */
+    .video-box {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.5%;
+      margin: 10px 0;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #000;
+    }
+    .video-box iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .product-img {
+      text-align: center;
+      margin: 6px 0 8px;
+    }
+    .product-img img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      display: inline-block;
+    }
+
+    .price-box {
+      margin-top: 4px;
+      margin-bottom: 6px;
+      text-align: center;
+    }
+    .price-old {
+      font-size: 13px;
+      color: #e63946;
+      text-decoration: line-through;
+      font-weight: 700;
+    }
+    .price-new {
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--green);
+      margin-top: 2px;
+      animation: pricePulse 1.3s infinite;
+    }
+    .price-discount {
+      font-size: 12px;
+      color: #fff;
+      background: var(--orange-dark);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 500;
+      display: inline-block;
+      margin-top: 2px;
+    }
+    .price-installments {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    @keyframes pricePulse {
+      0%   { transform: scale(1);   text-shadow: 0 0 0 rgba(0,0,0,0); }
+      50%  { transform: scale(1.05); text-shadow: 0 0 8px rgba(40,167,69,0.4); }
+      100% { transform: scale(1);   text-shadow: 0 0 0 rgba(0,0,0,0); }
+    }
+
+    .benefits {
+      list-style: none;
+      margin: 10px 0 12px;
+      font-size: 14px;
+    }
+    .benefits li {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 5px;
+    }
+    .benefits li span:first-child {
+      color: var(--green);
+    }
+
+    .info-frete {
+      font-size: 12px;
+      color: var(--text-muted);
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .cta-btn-primary {
+      width: 100%;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background: var(--orange);
+      color: #ffffff;
+      font-weight: 900;
+      font-size: 17px;
+      padding: 13px;
+      border-radius: 6px;
+      margin-bottom: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 6px;
+      animation: pulse 1.4s infinite;
+    }
+    .cta-btn-primary:hover { background: var(--orange-dark); }
+
+    @keyframes pulse {
+      0%   { transform: scale(1); box-shadow: 0 0 0 0 rgba(238,77,45,0.5); }
+      70%  { transform: scale(1.03); box-shadow: 0 0 0 12px rgba(238,77,45,0); }
+      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(238,77,45,0); }
+    }
+
+    .cta-no {
+      width: 100%;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 12px;
+      text-decoration: underline;
+      cursor: pointer;
+      text-align: center;
+      margin-bottom: 4px;
+    }
+
+    .mini-note {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="push-notification" id="pushBox">
+  <div class="push-icon">✓</div>
+  <div class="push-text">
+    <strong id="pushMain">Cliente acabou de levar o kit de soquetes com desconto.</strong>
+    <span>Frete incluso no mesmo pacote.</span>
+  </div>
+</div>
+
+<div class="page-wrapper">
+  <div class="top-confirmation">
+    <div class="top-confirmation-icon">!</div>
+    <div class="top-confirmation-text">
+      <strong>Última chance com desconto.</strong>
+      <span>Você recusou o kit maior, mas não sai daqui sem ver essa oferta menor.</span>
+    </div>
+  </div>
+
+  <div class="checkout-banner">
+    <span><span class="checkout-banner-emoji">🔧</span> Completa seu kit</span>
+    <span><span class="checkout-banner-emoji">🛡️</span> Bosch original</span>
+    <span><span class="checkout-banner-emoji">🚚</span> Mesmo frete do pedido</span>
+  </div>
+
+  <div class="upsell-card">
+    <div class="upsell-label">Oferta de recuperação — só agora</div>
+
+    <div class="upsell-title">
+      Leve pelo menos o básico: Jogo de Soquetes Bosch 33 Peças com super desconto.
+    </div>
+
+    <div class="upsell-sub">
+      Soquetes e ponteiras para apertar e soltar parafusos em segundos. Cabe certinho no seu kit.
+    </div>
+
+    <div class="upsell-timer">
+      ⏰ Desconto ativo por <span id="timer-min">09</span>:<span id="timer-sec">59</span>
+    </div>
+
+    <!-- vídeo -->
+    <div class="video-box">
+      <iframe
+        src="https://www.youtube.com/embed/GS79XMC-DCo?autoplay=1&mute=1&controls=0&loop=1&playlist=GS79XMC-DCo"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- imagem fallback -->
+    <div class="product-img">
+      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_722540-MLA79828933177_102024-F.webp"
+           alt="Jogo de Soquetes Bosch 33 Peças">
+    </div>
+
+    <div class="price-box">
+      <div class="price-old">De R$ 109,90</div>
+      <div class="price-new">R$ 39,90</div>
+      <div class="price-discount">Oferta só para este pedido • Frete incluso</div>
+      <div class="price-installments">Vai junto no mesmo pacote, sem pagar frete a mais.</div>
+    </div>
+
+    <ul class="benefits">
+      <li><span>✔</span><span>33 peças Bosch para apertar e soltar parafusos com muito mais rapidez.</span></li>
+      <li><span>✔</span><span>Encaixe 1/4", ideal para uso em casa, oficina e carro.</span></li>
+      <li><span>✔</span><span>Maletinha compacta: tudo organizado, nada perdido.</span></li>
+    </ul>
+
+    <div class="info-frete">
+      <strong>Sinceramente:</strong> por esse valor, é o tipo de kit que você só se arrepende de não ter comprado.  
+      Sai desta tela, o preço volta ao normal e não entra mais no mesmo frete.
+    </div>
+
+    <button class="cta-btn-primary" onclick="aceitarDownsell()">
+      ✅ SIM, QUERO LEVAR ESSE KIT POR R$ 39,90
+    </button>
+
+    <button class="cta-no" onclick="recusarDownsell()">
+      Não, quero seguir mesmo sem esse kit
+    </button>
+
+    <div class="mini-note">
+      Última oferta deste pedido. Depois disso você segue direto para a confirmação final.
+    </div>
+  </div>
+</div>
+
+<script>
+  // timer
+  let totalSeconds = 10 * 60;
+  function updateTimer() {
+    const m = Math.floor(totalSeconds / 60);
+    const s = totalSeconds % 60;
+    document.getElementById("timer-min").textContent = String(m).padStart(2, "0");
+    document.getElementById("timer-sec").textContent = String(s).padStart(2, "0");
+    if (totalSeconds > 0) {
+      totalSeconds--;
+      setTimeout(updateTimer, 1000);
+    }
+  }
+  updateTimer();
+
+  // coloque aqui os links reais
+  function aceitarDownsell() {
+    // ex: window.location.href = "https://seu-checkout.com/downsell-soquetes";
+    window.location.href = "#aceitou-downsell";
+  }
+
+  function recusarDownsell() {
+    // ex: window.location.href = "https://seusite.com/obrigado-final";
+    window.location.href = "#recusou-downsell";
+  }
+
+  // push fake
+  const nomes = [
+    "Fernando - SP","Leandro - MG","Rogério - PR","Silvio - RJ",
+    "Marcelo - BA","Daniel - GO","Cláudio - SC","Sérgio - RS"
+  ];
+  const pushBox = document.getElementById("pushBox");
+  const pushMain = document.getElementById("pushMain");
+
+  function mostrarPush() {
+    const nome = nomes[Math.floor(Math.random() * nomes.length)];
+    pushMain.textContent = nome + " acabou de levar o Jogo de Soquetes com desconto.";
+    pushBox.classList.add("show");
+    setTimeout(() => pushBox.classList.remove("show"), 4500);
+  }
+
+  setTimeout(mostrarPush, 2000);
+  setInterval(mostrarPush, 15000);
+</script>
+
+</body>
+</html>
